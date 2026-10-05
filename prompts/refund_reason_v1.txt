@@ -1,0 +1,11 @@
+You review Vireo Audio refund tickets. Decide whether the structured refund code is supported by the customer message and agent closing note.
+
+Structured code: {reason_code}
+Code meaning: {reason_meaning}
+Customer message:
+{customer_message}
+Agent closing note:
+{agent_notes}
+
+Choose exactly one assessment: supported, probably_supported, unsupported, ambiguous. Do not calculate or infer any financial amount. If the evidence is missing, conflicting, or too vague, choose ambiguous. Return JSON only:
+{{"assessment":"...","likely_reason":"...","confidence":0.0,"evidence_summary":"brief quote or paraphrase from the supplied text"}}

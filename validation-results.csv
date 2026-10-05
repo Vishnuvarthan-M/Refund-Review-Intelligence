@@ -1,0 +1,31 @@
+ticket_id,reference_assessment,error_category,review_note,assessment,likely_reason,confidence,evidence_summary,correct
+TK-241130,ambiguous,none,Intermittent pairing issue but no clear DOA evidence; text does not establish dead on arrival.,ambiguous,Unclear,0.3,No clear reason evidence found in the available text.,True
+TK-241315,unsupported,none,Customer and agent both identify a duplicate card payment; GW-OTHER is not the best specific code.,unsupported,Payment,0.85,Detected Payment in message/notes.,True
+TK-241529,probably_supported,confidence_calibration,Customer says return accepted but the closing note does not document receipt or QC outcome.,probably_supported,Return,0.72,Detected Return in message/notes.,True
+TK-241675,unsupported,none,Agent documents successful repair and replacement; GW-OTHER does not identify the product issue.,unsupported,Warranty,0.85,Detected Warranty in message/notes.,True
+TK-241993,unsupported,none,Customer and agent describe a payment debit without a created order.,unsupported,Payment,0.85,Detected Payment in message/notes.,True
+TK-243079,probably_supported,ambiguous_delivery,"Tracking is delayed and a refund was issued, but loss or non-delivery is not confirmed.",probably_supported,Transit,0.72,Detected Transit in message/notes.,True
+TK-243374,supported,none,Customer requests cancellation before dispatch and agent confirms cancellation.,supported,Cancellation,0.9,Detected Cancellation in message/notes.,True
+TK-243824,probably_supported,ambiguous_delivery,Tracking is stuck and the agent checked the carrier; delivery failure is plausible but not confirmed.,probably_supported,Transit,0.72,Detected Transit in message/notes.,True
+TK-245443,unsupported,none,"Agent documents reverse pickup and QC status, a return-related reason rather than generic goodwill/other.",unsupported,Return,0.85,Detected Return in message/notes.,True
+TK-245774,supported,ambiguous_delivery,Customer has not received the order and agent checked carrier tracking before refund.,supported,Transit,0.9,Detected Transit in message/notes.,True
+TK-246310,ambiguous,ambiguous_damage,Product arrived cracked before first use; evidence does not separate DOA from transit damage.,ambiguous,Transit; Warranty,0.4,"Detected Transit, Warranty in message/notes.",True
+TK-246341,supported,none,Customer asks about return refund and agent documents reverse pickup QC status.,supported,Return,0.9,Detected Return in message/notes.,True
+TK-247603,ambiguous,none,"Payment went through without an order ID, but no resolving note supports what happened.",ambiguous,Payment,0.72,Detected Payment in message/notes.,True
+TK-247854,ambiguous,insufficient_evidence,Only refund-delay status is discussed; the original refund reason is absent.,ambiguous,Unclear,0.3,No clear reason evidence found in the available text.,True
+TK-248288,ambiguous,insufficient_evidence,Only refund delay and payment-gateway status are mentioned; the original cause is not established.,ambiguous,Unclear,0.3,No clear reason evidence found in the available text.,True
+TK-248426,unsupported,none,Agent explicitly records cancellation before dispatch rather than goodwill/other.,unsupported,Cancellation,0.85,Detected Cancellation in message/notes.,True
+TK-249198,unsupported,multiple_possible_reasons,Agent notes confirm transit damage and warranty/RMA handling; GW-OTHER hides a specific documented issue.,unsupported,Warranty,0.85,Detected Warranty in message/notes.,True
+TK-249738,probably_supported,confidence_calibration,"Pickup was missed and re-raised, but the note does not explicitly state QC passed.",probably_supported,Return,0.72,Detected Return in message/notes.,True
+TK-250155,unsupported,none,"Agent documents reverse pickup QC status, indicating a return rather than generic goodwill/other.",unsupported,Return,0.85,Detected Return in message/notes.,True
+TK-250877,unsupported,none,UPI succeeded without order creation and the agent confirms payment-gateway review.,unsupported,Payment,0.85,Detected Payment in message/notes.,True
+TK-250886,unsupported,missed_warranty_language,Strap failure was escalated to warranty and a replacement was sent; this is not generic goodwill/other.,unsupported,Warranty,0.85,Detected Warranty in message/notes.,True
+TK-251456,probably_supported,confidence_calibration,Agent reports reverse pickup QC status but does not explicitly state the returned unit passed QC.,probably_supported,Return,0.72,Detected Return in message/notes.,True
+TK-251720,unsupported,none,Customer and agent describe money debited without an order.,unsupported,Payment,0.85,Detected Payment in message/notes.,True
+TK-251727,ambiguous,insufficient_evidence,Customer mentions refund delay and requests replacement; agent note does not establish the underlying reason.,ambiguous,Unclear,0.3,No clear reason evidence found in the available text.,True
+TK-252644,unsupported,missed_return_shorthand,"Agent documents reverse pickup and QC status, a return reason.",unsupported,Return,0.85,Detected Return in message/notes.,True
+TK-252869,unsupported,none,Customer and agent describe a coupon eligibility/price issue.,unsupported,Price adjustment,0.85,Detected Price adjustment in message/notes.,True
+TK-253129,unsupported,none,Customer and agent describe payment deducted without order creation.,unsupported,Payment,0.85,Detected Payment in message/notes.,True
+TK-253466,ambiguous,insufficient_evidence,Payment without an order is plausible but agent note contains no corroborating detail.,ambiguous,Payment,0.4,Detected Payment in message/notes.,True
+TK-253933,probably_supported,missed_fault_language,"Customer reports intermittent connection loss, consistent with a warranty buy-back reason, but no refund decision is documented in the note.",probably_supported,Warranty,0.72,Detected Warranty in message/notes.,True
+TK-254527,ambiguous,multiple_possible_reasons,Crushed packaging and a cracked unit could be DOA or transit damage; evidence does not distinguish them.,ambiguous,Transit; Warranty,0.4,"Detected Transit, Warranty in message/notes.",True
